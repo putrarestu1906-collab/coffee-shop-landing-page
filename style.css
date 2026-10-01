@@ -1,0 +1,718 @@
+/* =========================
+   GLOBAL STYLE
+========================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("./assets/images/coffee.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Judul Hero */
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    max-width: 650px;
+}
+
+
+/* Deskripsi Hero */
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    max-width: 600px;
+    color: #f1f1f1;
+}
+
+
+/* Tombol */
+
+.hero .btn {
+    padding: 13px 28px;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.about-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: 0.4s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.02);
+}
+
+.about-content {
+    padding: 30px;
+    padding-left: 45px;
+}
+
+.about-subtitle {
+    color: #b7791f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0 25px;
+    color: #212529;
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-content .btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+}
+
+/* =========================
+   MENU SECTION
+========================= */
+
+.menu-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section-title span {
+    color: #b7791f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #212529;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.menu-content {
+    padding: 25px;
+}
+
+.menu-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.menu-content p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.menu-price {
+    color: #b7791f;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* =========================
+   WHY CHOOSE US SECTION
+========================= */
+
+.why-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.why-card {
+    text-align: center;
+    padding: 40px 30px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #f8f9fa;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.why-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-info {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-icon {
+    font-size: 28px;
+    min-width: 40px;
+}
+
+.contact-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #666;
+    margin: 0;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.contact-form h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-form .form-control {
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.contact-form .btn {
+    padding: 12px 25px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 70px 0 20px;
+}
+
+.footer h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #adb5bd;
+    line-height: 1.7;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #ffc107;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer hr {
+    border-color: #495057;
+    margin: 50px 0 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Hero */
+    .hero {
+        text-align: center;
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        margin: 5px;
+    }
+
+
+    /* About */
+    .about-section {
+        padding: 70px 0;
+    }
+
+    .about-image {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+
+    /* Menu */
+    .menu-section {
+        padding: 70px 0;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .section-title p {
+        font-size: 16px;
+    }
+
+
+    /* Why Choose Us */
+    .why-section {
+        padding: 70px 0;
+    }
+
+    .why-card {
+        padding: 30px 20px;
+    }
+
+
+    /* Contact */
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-info {
+        padding: 25px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+
+    /* Footer */
+    .footer {
+        padding-top: 50px;
+    }
+
+    .footer .row > div {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar {
+    padding: 18px 0;
+    transition: 0.3s;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #ffffff !important;
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.navbar .nav-link.active {
+    color: #ffc107 !important;
+}
+
+/* =========================
+ORDER SECTION
+========================= */
+
+.order-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.order-form {
+    background-color: #f8f9fa;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.order-form .form-control {
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.order-form .btn {
+    padding: 12px 25px;
+}
+
+/* =========================
+ORDER FORM SECTION
+========================= */
+
+.order-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.order-form {
+    background-color: #f8f9fa;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.order-form .form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.order-form .form-control {
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.order-form .btn {
+    padding: 12px 25px;
+    font-weight: bold;
+}
+
+/* =========================
+ORDER BUTTON
+========================= */
+
+.order-btn {
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   PORTFOLIO UI UPGRADE
+========================= */
+
+/* Navbar */
+.navbar {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(33, 37, 41, 0.95) !important;
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-1px);
+}
+
+
+/* Hero */
+.hero h1 {
+    letter-spacing: -1px;
+}
+
+.hero .btn {
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Section Title */
+.section-title span,
+.about-subtitle {
+    text-transform: uppercase;
+}
+
+
+/* About Image */
+.about-image {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Menu Card */
+.menu-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.menu-image {
+    overflow: hidden;
+}
+
+.menu-image img {
+    transition: transform 0.5s ease;
+}
+
+.menu-card:hover .menu-image img {
+    transform: scale(1.08);
+}
+
+.order-btn {
+    transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Why Choose Us */
+.why-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-icon {
+    transition: transform 0.3s ease;
+}
+
+.why-card:hover .why-icon {
+    transform: scale(1.15);
+}
+
+
+/* Forms */
+.contact-form,
+.order-form {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover,
+.order-form:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border: 1px solid #dee2e6;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #b7791f;
+    box-shadow: 0 0 0 0.2rem rgba(183, 121, 31, 0.15);
+}
+
+
+/* Button */
+.btn-warning {
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Footer Links */
+.footer a {
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    padding-left: 4px;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        letter-spacing: 0;
+    }
+
+    .menu-card:hover,
+    .why-card:hover {
+        transform: translateY(-5px);
+    }
+
+}
